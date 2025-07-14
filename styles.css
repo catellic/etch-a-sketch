@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vmin;
+  height: 100vmin;
+  
+}
+
+.grid-item {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;  
+}
+
+.grid-item:hover {
+  background-color: brown;
+  font-size: 18px;
+}
+
+.selected, .selected:hover {
+  background-color: black;
+  color: black;
+}
