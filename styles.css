@@ -1,43 +1,54 @@
-html,
-body {
+body, html {
+  /* max-height: 100dvh; */
+  height: 100dvh;
+  width: 100dvw;
+  overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
+  box-sizing: border-box;
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header, .footer {
+  /* padding: 1rem; */
+  margin: 0;
+  /* flex: 0 1 auto; */
 }
 
 .grid {
   display: flex;
-  
-  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100vmin;
-  height: 100vmin;
+  flex: 1 1 auto;
   
 }
 
 .grid-item {
-  display: flex;
-  flex: 1;
+  flex: 1 1 auto; /* Adjust for a 16x16 grid */
   box-sizing: border-box;
-  justify-content: center;
+  background-color: #f0f0f0;
+  color:#f0f0f0;
+  border: 1px solid #ccc;
+  text-align: center;
+  display: flex;
   align-items: center;
-  border: 1px solid black;
-  border-radius: 5px;  
+  justify-content: center;
+
 }
 
 .grid-item:hover {
-  background-color: brown;
-  font-size: 18px;
+  background-color: #e0e0e0; /* Change color on hover */
+  color: #e0e0e0
 }
 
-.selected, .selected:hover {
-  background-color: black;
-  color: black;
+.grid-item.selected{
+  background-color: tomato; /* Highlight color when active */
+  color: tomato;
 }

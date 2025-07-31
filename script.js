@@ -2,6 +2,7 @@ let size = 16;
 
 const gridSel = document.querySelector(`.grid`);
 const newGridBtn = document.querySelector(`.new-grid`);
+const clearBtn = document.querySelector(`.clear`);
 
 function retrieveSizeFromUsr() {
   let input;
@@ -21,11 +22,11 @@ function retrieveSizeFromUsr() {
 
 function createGrid(size) {
   squareItemSize = 100 / size;
-
+  
   for (let i = 0; i < size * size; i++) {
     let div = document.createElement("div");
 
-    div.textContent = `${i + 1}`;
+    div.textContent = `-`;
     div.classList.add("grid-item");
     div.id = `${i + 1}`;
     div.style.width = `${squareItemSize}%`;
@@ -50,4 +51,11 @@ gridSel.addEventListener("click", (e) => {
   if (e.target.classList.contains("grid-item")) {
     e.target.classList.toggle("selected");
   }
+});
+
+clearBtn.addEventListener(`click`, () => {
+  const gridItems = document.querySelectorAll(".grid-item");
+  gridItems.forEach((item) => {
+    item.classList.remove("selected");
+  });
 });
