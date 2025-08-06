@@ -1,7 +1,9 @@
 # Etch-a-Sketch
 
 Etch-a-Sketch è una web app che riproduce il celebre gioco di disegno digitale. Muovi il mouse sulla griglia per "disegnare" colorando le celle!
-
+  
+[Gioca ora su Etch-a-Sketch](https://catellic.github.io/etch-a-sketch/){:target="_blank"} <!-- Apri in una nuova scheda -->
+  
 ## Funzionalità
 
 - Griglia interattiva e responsive
