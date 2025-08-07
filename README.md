@@ -36,5 +36,4 @@ Questo progetto è open source e libero per uso personale o didattico.
 
 ---
 
-Progetto realizzato da catellic.
-Readme generato da Copilot.
+Realizzato da catellic. Readme generato da Copilot.
